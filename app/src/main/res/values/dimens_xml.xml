@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimens name="padding_smoll">10dp</dimens>
+    <dimens name="padding_medium">30dp</dimens>
+    <dimens name="divider_tinis">1dp</dimens>
+    </resources>
