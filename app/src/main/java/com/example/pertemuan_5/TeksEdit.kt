@@ -1,4 +1,4 @@
-package com.example.pertemuan_5.ui.theme
+package com.example.pertemuan_5
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Divider
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -85,7 +84,8 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         selected = textJK == item,
                         onClick = { textJK = item }
                     )
-                    Text(text = stringResource(id = R.string.submit))
+
+                    Text(item)
                 }
             }
         }
@@ -117,12 +117,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 alamat = textAlamat
             }
         ) {
-            Text(text = stringResource(id = R.st))
+            Text(text = stringResource(id = R.string.submit))
         }
 
-        Divider(
+        HorizontalDivider(
             modifier = Modifier.padding(vertical = dimensionResource(id = R.dimen.padding_medium)),
-            thickness = dimensionResource(id = R.dimen.divider_tipis),
+            thickness = dimensionResource(id = R.dimen.padding_medium),
             color = Color.DarkGray
         )
 
